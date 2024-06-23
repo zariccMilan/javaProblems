@@ -14,10 +14,10 @@ public class Solution {
         int n = Integer.parseInt(bufferedReader.readLine().trim());
 
         List<Integer> a = Stream.of(bufferedReader.readLine()
-                .replaceAll("\\s+$", "") // can also use .trim(), diff is that trim() goes before and after, and regex just after
-                .split(" "))
-                .map(Integer::parseInt)
-                .collect(toList());
+                        .replaceAll("\\s+$", "") // can also use .trim(), diff is that trim() goes before and after, and regex just after
+                        .split(" "))
+                        .map(Integer::parseInt)
+                        .collect(toList());
 
         for (int i = 1; i < n; i++) {
             a.add(Integer.parseInt(bufferedReader.readLine().trim()));
